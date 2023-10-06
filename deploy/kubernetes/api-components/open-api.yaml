@@ -108,7 +108,7 @@ paths:
         "202":
           description: Delete response
 servers:
-  - url: http://localhost/
+  - url: http://localhost:8081/
 components:
   schemas:
     Getcartresponse:
