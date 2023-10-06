@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: carts-svc-api
+  description: API for the Carts Service
+spec:
+  type: openapi
+  lifecycle: production
+  owner: user:guest
+  definition:
+    $text: https://github.com/aishwarya9404/microservices-demo/blob/master/deploy/kubernetes/manifests/02-carts-svc.yml
