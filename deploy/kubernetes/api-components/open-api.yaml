@@ -24,7 +24,7 @@ paths:
           content:
             application/json;charset=UTF-8:
               schema:
-                $ref: "#/components/schemas/Getcartresponse"
+                "$ref": "#/definitions/Getcartresponse"
     delete:
       description: ""
       operationId: Delete cart
@@ -53,10 +53,10 @@ paths:
         content:
           application/json;charset=UTF-8:
             schema:
-              $ref: "#/components/schemas/CartItem"
+              "$ref": "#/definitions/CartItem",
           text/plain:
             schema:
-              $ref: "#/components/schemas/CartItem"
+              "$ref": "#/definitions/CartItem"
         required: true
       responses:
         "201":
@@ -64,7 +64,7 @@ paths:
           content:
             application/json;charset=UTF-8:
               schema:
-                $ref: "#/components/schemas/CartItem"
+                "$ref": "#/definitions/CartItem"
     patch:
       description: Update an item
       operationId: Update item
@@ -101,7 +101,7 @@ paths:
         - name: customerId
           in: path
           required: true
-          example: 579f21ae98684924944651bf
+          example: 57a98d98e4b00679b4a830af
           schema:
             type: string
       responses:
