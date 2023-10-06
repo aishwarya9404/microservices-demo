@@ -7,4 +7,5 @@ spec:
   type: openapi
   lifecycle: production
   owner: user:guest
-  $text: https://github.com/aishwarya9404/microservices-demo/blob/master/deploy/kubernetes/api-components/open-api.yaml
+  definition:
+    $text: https://github.com/aishwarya9404/microservices-demo/blob/master/deploy/kubernetes/api-components/open-api.yaml
