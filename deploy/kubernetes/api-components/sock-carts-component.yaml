@@ -3,13 +3,10 @@ kind: Component
 metadata:
   name: boutique-carts
   annotations:
-    github.com/project-slug: infracloudio/backstage-msvc-app/src/cartservice     
+    github.com/project-slug: https://github.com/aishwarya9404/microservices-demo
 spec:
   type: service
   lifecycle: production
   owner: user:guest
-  dependsOn:
-    - component:boutique-frontend
-    - component:boutique-products
   providesApis:
-    - boutique-carts-api
+    - carts-api
